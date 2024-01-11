@@ -6,7 +6,7 @@ contactForm.addEventListener('submit', (e) => {
   let fd = new FormData(contactForm);
   data = new URLSearchParams(fd).toString();
 
-  fetch('http://localhost:9000/post', {
+  fetch('https://manu-contact.glitch.me/post', {
     method: 'POST',
     headers: {
       'Content-type': 'application/x-www-form-urlencoded'
